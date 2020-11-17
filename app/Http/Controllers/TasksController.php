@@ -3,49 +3,62 @@
 namespace App\Http\Controllers;
 
 use App\Http\Requests\RequestTask;
+use App\Http\Requests\RequestTasks;
 use App\Http\Requests\TaskRequest;
 use App\Models\tasks;
 use Faker\Guesser\Name;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Validator;
 
 class TasksController extends Controller
 {
     public function index()
     {
-        $tasks = DB::table('tasks')->get();
 
-        return view('tasks.index', ['tasks' => $tasks]);
+        return view('tasks.index', ['tasks' => Tasks::where(['user_id' => Auth::user()->id])->get(), 'user' => Auth::user()]);
     }
 
     /**
      * Show the form for creating a new resource.
      *
-     * @param RequestTask $requestTask
-     * @param Tasks $tasks
-     * @param Request $request
+     * @param tasks $obTasks
+     * @param RequestTasks $obRequestTask
+     * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Http\RedirectResponse|\Illuminate\Routing\Redirector
      */
-    public function create(Tasks $tasks, Request $request, RequestTask $requestTask)
+    public function create(Tasks $obTasks, RequestTasks $obRequestTask)
     {
-        $tasks->title = $request->title;
-        $tasks->save();
+        $obTasks->title = $obRequestTask->title;
+        $obTasks->user_id = Auth::user()->id;
+        $obTasks->save();
         return redirect(route('home'));
     }
 
-    public function update(Request $request)
+
+    public function update(Tasks $obTasks, Request $obRequest)
     {
+        $obTask = $obTasks::where(['id' => $obRequest->id])->get()->first();
 
-        $task = DB::table('tasks')->where(['id' => $request->id])->first();
-        return view('tasks/_update', ['task' => $task]);
-    }
-
-
-    public function updatePost(Request $request, RequestTask $requestTask)
-    {
-        DB::table('tasks')
-            ->where('id', $request->id)
-            ->update(['title' => $request->title]);
-        return redirect(route('home'));
+        if ($obRequest->method() === 'POST') {
+            $obValidator = Validator::make($obRequest->all(), [
+                'title' => 'required|unique:tasks|max:255',
+            ], [
+                'required' => 'Поле `:attribute` должно быть заполнено.',
+                'max' => 'Максимальная длина поля `:attribute`, 128 символов.',
+                'unique' => 'Такая задача уже существует.',
+            ], [
+                'title' => 'Задача',
+            ]);
+            if ($obValidator->fails()) {
+                return view('tasks._update', ['task' => $obTask])
+                    ->withErrors($obValidator);
+            }
+            Tasks::where(['id' => $obRequest->id])
+                ->update(['title' => $obRequest->title]);
+            return redirect(route('home'));
+        }
+        return view('tasks._update', ['task' => $obTask]);
     }
 
     public function delete(Request $request)
@@ -55,50 +68,5 @@ class TasksController extends Controller
             ->delete();
         return redirect(route('home'));
 
-    }
-
-
-    /**
-     * Store a newly created resource in storage.
-     *
-     * @param \Illuminate\Http\Request $request
-     * @return \Illuminate\Http\Response
-     */
-    public function store(Request $request)
-    {
-        //
-    }
-
-    /**
-     * Display the specified resource.
-     *
-     * @param \App\Models\Tasks $tasks
-     * @return \Illuminate\Http\Response
-     */
-    public function show(Tasks $tasks)
-    {
-        //
-    }
-
-    /**
-     * Show the form for editing the specified resource.
-     *
-     * @param \App\Models\Tasks $tasks
-     * @return \Illuminate\Http\Response
-     */
-    public function edit(Tasks $tasks)
-    {
-        //
-    }
-
-    /**
-     * Remove the specified resource from storage.
-     *
-     * @param \App\Models\Tasks $tasks
-     * @return \Illuminate\Http\Response
-     */
-    public function destroy(Tasks $tasks)
-    {
-        //
     }
 }

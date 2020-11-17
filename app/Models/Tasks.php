@@ -7,6 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 
 /**
  * @property mixed title
+ * @method static where(array $array)
  */
 class Tasks extends Model
 {

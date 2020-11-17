@@ -7,7 +7,7 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ComposerSettings" synchronizationState="SYNCHRONIZE">
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
     <execution />
   </component>
@@ -17,6 +17,9 @@
         <option value="CSS File" />
       </list>
     </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
@@ -136,17 +139,18 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/public/css" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/myAuth" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="L:\OSPanel\domains\todo\resources\views\myAuth" />
+      <recent name="L:\OSPanel\domains\todo\public\css" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="L:\OSPanel\domains\todo\public\css\assets\icons" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="L:\OSPanel\domains\todo\public\css" />
     </key>
   </component>
   <component name="RunManager">
@@ -164,6 +168,9 @@
       <option name="presentableId" value="Default" />
       <updated>1605153987341</updated>
       <workItem from="1605153988401" duration="28008000" />
+      <workItem from="1605592102726" duration="38000" />
+      <workItem from="1605595924771" duration="599000" />
+      <workItem from="1605608865373" duration="14751000" />
     </task>
     <servers />
   </component>
@@ -175,6 +182,10 @@
       <screen x="0" y="40" width="1920" height="1040" />
     </state>
     <state x="662" y="380" key="#Notifications/0.40.1920.1040@0.40.1920.1040" timestamp="1605202931833" />
+    <state x="690" y="315" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1605623753544">
+      <screen x="0" y="40" width="1920" height="1040" />
+    </state>
+    <state x="690" y="315" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.40.1920.1040@0.40.1920.1040" timestamp="1605623753544" />
     <state x="740" y="315" key="FileChooserDialogImpl" timestamp="1605197384366">
       <screen x="0" y="40" width="1920" height="1040" />
     </state>
@@ -183,9 +194,17 @@
       <screen x="0" y="40" width="1920" height="1040" />
     </state>
     <state x="835" y="460" key="Github.ShareDialog/0.40.1920.1040@0.40.1920.1040" timestamp="1605202850207" />
-    <state x="793" y="479" key="NewPhpFileDialog" timestamp="1605193432044">
+    <state x="793" y="479" key="NewPhpFileDialog" timestamp="1605610726185">
       <screen x="0" y="40" width="1920" height="1040" />
     </state>
-    <state x="793" y="479" key="NewPhpFileDialog/0.40.1920.1040@0.40.1920.1040" timestamp="1605193432044" />
+    <state x="793" y="479" key="NewPhpFileDialog/0.40.1920.1040@0.40.1920.1040" timestamp="1605610726185" />
+    <state x="616" y="260" key="run.anything.popup" timestamp="1605618650386">
+      <screen x="0" y="40" width="1920" height="1040" />
+    </state>
+    <state x="616" y="260" key="run.anything.popup/0.40.1920.1040@0.40.1920.1040" timestamp="1605618650386" />
+    <state x="623" y="265" width="672" height="678" key="search.everywhere.popup" timestamp="1605612312503">
+      <screen x="0" y="40" width="1920" height="1040" />
+    </state>
+    <state x="623" y="265" width="672" height="678" key="search.everywhere.popup/0.40.1920.1040@0.40.1920.1040" timestamp="1605612312503" />
   </component>
 </project>

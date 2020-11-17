@@ -14,7 +14,6 @@
             <input type="submit" value="">
         </div>
     </form>
-
     <div class="d-flex flex-column align-items-center">
         @yield('_tasks')
     </div>

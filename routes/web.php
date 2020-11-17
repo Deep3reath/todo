@@ -3,24 +3,25 @@
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
-/*
-|--------------------------------------------------------------------------
-| Web Routes
-|--------------------------------------------------------------------------
-|
-| Here is where you can register web routes for your application. These
-| routes are loaded by the RouteServiceProvider within a group which
-| contains the "web" middleware group. Now create something great!
-|
-*/
 
+// Работа с задачами
 
+Route::middleware('auth')->group(function () {
+    Route::get('/', [App\Http\Controllers\TasksController::class, 'index'])->name('home');
+    Route::prefix('tasks')->middleware('auth')->group(function () {
+        Route::post('create', [App\Http\Controllers\TasksController::class, 'create'])->name('create');
+        Route::any('update', [App\Http\Controllers\TasksController::class, 'update'])->name('update');
+        Route::get('delete', [App\Http\Controllers\TasksController::class, 'delete'])->name('delete');
+    });
+});
 
-Auth::routes();
+// Авторизация и Регистрация
+#Route::any();
+Route::any('/login', [\App\Http\Controllers\MyAuth\LoginController::class, 'authenticate'])->name('login');
+Route::any('/register', [\App\Http\Controllers\MyAuth\RegisterController::class, 'register'])->name('register');
+Route::any('/logout',
+    function () {
+        Auth::logout();
+        return redirect(\route('home'));
+    })->name('logout');
 
-Route::get('/', [App\Http\Controllers\TasksController::class, 'index'])->name('home');
-
-Route::post('/task/create', [App\Http\Controllers\TasksController::class, 'create'])->name('create');
-Route::get('/task/update', [App\Http\Controllers\TasksController::class, 'update'])->name('update');
-Route::post('/task/updatePost', [App\Http\Controllers\TasksController::class, 'updatePost'])->name('updatePost');
-Route::get('/task/delete', [App\Http\Controllers\TasksController::class, 'delete'])->name('delete');

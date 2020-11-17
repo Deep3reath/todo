@@ -13,8 +13,16 @@
 </head>
 <body>
 <header>
-    <div class="container">
-    <h1><a href="{{route('home')}}">Todo</a></h1>
+    <div class="container d-flex flex-row justify-content-between">
+        <h1><a href="{{route('home')}}">Todo</a></h1>
+        <div class="align-self-center">
+            @if(!Auth::check())
+                <a href="{{route('login')}}">Войти</a>
+                <a class="ml-1" href="{{route('register')}}">Регистрация</a>
+            @else
+                <a href="{{route('logout')}}">Выйти</a>
+            @endif
+        </div>
     </div>
 </header>
 <main class="container d-flex flex-column">
