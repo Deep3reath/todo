@@ -17,11 +17,7 @@ class CreateTasksTable extends Migration
             $table->id();
             $table->timestamps();
             $table->string('title', 63);
-            $table->foreignId('id_user')
-                ->constrained()
-                ->onDelete('cascade');
         });
-
     }
 
     /**
@@ -31,7 +27,6 @@ class CreateTasksTable extends Migration
      */
     public function down()
     {
-        $table->dropForeign('posts_user_id_foreign');
         Schema::dropIfExists('tasks');
     }
 }

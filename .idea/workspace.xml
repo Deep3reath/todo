@@ -7,7 +7,7 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
+  <component name="ComposerSettings" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
     <execution />
   </component>
@@ -17,9 +17,6 @@
         <option value="CSS File" />
       </list>
     </option>
-  </component>
-  <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
@@ -166,13 +163,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1605153987341</updated>
-      <workItem from="1605153988401" duration="28504000" />
-      <workItem from="1605243426728" duration="10990000" />
-      <workItem from="1605329954816" duration="627000" />
-      <workItem from="1605378151416" duration="3337000" />
-      <workItem from="1605413027248" duration="2197000" />
-      <workItem from="1605420171072" duration="812000" />
-      <workItem from="1605470927530" duration="597000" />
+      <workItem from="1605153988401" duration="28008000" />
     </task>
     <servers />
   </component>
@@ -196,21 +187,5 @@
       <screen x="0" y="40" width="1920" height="1040" />
     </state>
     <state x="793" y="479" key="NewPhpFileDialog/0.40.1920.1040@0.40.1920.1040" timestamp="1605193432044" />
-    <state x="727" y="238" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1605378943511">
-      <screen x="0" y="40" width="1920" height="1040" />
-    </state>
-    <state x="727" y="238" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.40.1920.1040@0.40.1920.1040" timestamp="1605378943511" />
-    <state width="600" height="440" key="javadoc.popup" timestamp="1605420223569">
-      <screen x="0" y="40" width="1920" height="1040" />
-    </state>
-    <state width="600" height="440" key="javadoc.popup/0.40.1920.1040@0.40.1920.1040" timestamp="1605420223569" />
-    <state x="679" y="326" key="refactoring.ChangeSignatureDialog" timestamp="1605276430861">
-      <screen x="0" y="40" width="1920" height="1040" />
-    </state>
-    <state x="679" y="326" key="refactoring.ChangeSignatureDialog/0.40.1920.1040@0.40.1920.1040" timestamp="1605276430861" />
-    <state x="623" y="265" width="672" height="678" key="search.everywhere.popup" timestamp="1605276647309">
-      <screen x="0" y="40" width="1920" height="1040" />
-    </state>
-    <state x="623" y="265" width="672" height="678" key="search.everywhere.popup/0.40.1920.1040@0.40.1920.1040" timestamp="1605276647309" />
   </component>
 </project>
