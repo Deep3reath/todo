@@ -1,18 +1,31 @@
 <?php
 
-namespace App\Http\Controllers\MyAuth;
 
-use App\Http\Controllers\Controller;
-use App\Models\Tasks;
+namespace App\Http\Controllers;
+
+
 use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
-use Psy\Util\Json;
+use Illuminate\Support\Str;
 
-class RegisterController extends Controller
+class AuthController extends Controller
 {
+    public function authenticate(Request $obRequest)
+    {
+        $arCredentials = $obRequest->only('email', 'password');
+
+        if ($obRequest->method() === 'POST') {
+            if (Auth::attempt($arCredentials, $obRequest->remember))
+                return response()->json(['redirect' => route('home')]);
+            return response()->json(['validationMessage' => 'Неправильный логин или пароль']);
+        } else {
+            return view('auth.login');
+        }
+    }
+
     public function register(User $obUser, Request $obRequest)
     {
         $arCredentials = $obRequest->only('email', 'password', 'remember');
@@ -32,17 +45,17 @@ class RegisterController extends Controller
                 'password' => 'Пароль',
             ]);
             if ($obValidator->fails()) {
-                return view('myAuth.register')
-                    ->withErrors($obValidator);
+                return response()->json(['validationMessage' => $obValidator->errors()->first()]);
             }
             $obUser->fill([
                 'name' => $obRequest->name,
                 'password' => Hash::make($obRequest->password),
                 'email' => $obRequest->email,
+                'api_token' => Str::random(60),
             ])->save();
-            return redirect(route('login'));
+            return response()->json(['redirect' => route('login')]);
         } else {
-            return view('myAuth.register');
+            return view('auth.register');
         }
     }
 }

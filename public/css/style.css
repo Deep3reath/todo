@@ -27,7 +27,7 @@ header > div > h1 {
     line-height: 90px;
 }
 input[type="text"]:focus {outline: none;}
-#delete, #update, .form-add-task > div > input[type="text"]  {
+.delete, .update, .form-add-task > div > input[type="text"]  {
     border: none;
 }
 .form-add-task > div.form-add-input, .form-update-task > div.form-update-input  {
@@ -54,16 +54,21 @@ input[type="text"]:focus {outline: none;}
     height: 70px;
 }
 
-.form-add-task > div > input[type="submit"] {outline: none;}
-.form-add-task > div > input[type="submit"], .form-update-task > div > input[type="submit"] {
+.form-add-task > div > input[type="button"] {outline: none;}
+.form-add-task > div > input[type="button"], .form-update-task > div > input[type="submit"] {
     border: none;
     vertical-align: middle;
 }
 
-.form-add-task > div > input[type="submit"] {
+.form-add-task > div > input[type="button"] {
+    border: none;
     background: url("assets/icons/add-icon.svg") no-repeat center;
     width: 30px;
     height: 30px;
+}
+.form-add-task > div > input[type="button"]:focus {
+    border: none;
+    outline: none;
 }
 .form-update-task > div > input[type="submit"] {
     background: url("assets/icons/update-icon.svg") no-repeat center;
@@ -108,14 +113,14 @@ input[type="text"]:focus {outline: none;}
     margin-right: 15px;
     color: #A7BD6A;
 }
-#update {
+.update {
     background: url("assets/icons/update-icon.svg") no-repeat center;
     width: 40px;
     height: inherit;
     vertical-align: middle;
 }
 
-#delete {
+.delete {
     margin-left: 30px;
     background: url("assets/icons/delete-icon.svg") no-repeat center;
     width: 50px;

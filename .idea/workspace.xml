@@ -139,7 +139,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/myAuth" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
@@ -170,7 +170,15 @@
       <workItem from="1605153988401" duration="28008000" />
       <workItem from="1605592102726" duration="38000" />
       <workItem from="1605595924771" duration="599000" />
-      <workItem from="1605608865373" duration="14751000" />
+      <workItem from="1605608865373" duration="14959000" />
+      <workItem from="1605659350077" duration="595000" />
+      <workItem from="1605663990801" duration="908000" />
+      <workItem from="1606195010140" duration="4860000" />
+      <workItem from="1606206772144" duration="21710000" />
+      <workItem from="1606237161796" duration="598000" />
+      <workItem from="1606281819496" duration="1214000" />
+      <workItem from="1606307046431" duration="5248000" />
+      <workItem from="1606317976062" duration="3499000" />
     </task>
     <servers />
   </component>
@@ -178,33 +186,52 @@
     <option name="version" value="3" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="668" y="326" key="#Log_Highlighting_(ideolog)" timestamp="1606210054142">
+      <screen x="0" y="40" width="1920" height="1040" />
+    </state>
+    <state x="668" y="326" key="#Log_Highlighting_(ideolog)/0.40.1920.1040@0.40.1920.1040" timestamp="1606210054142" />
     <state x="662" y="380" key="#Notifications" timestamp="1605202931833">
       <screen x="0" y="40" width="1920" height="1040" />
     </state>
     <state x="662" y="380" key="#Notifications/0.40.1920.1040@0.40.1920.1040" timestamp="1605202931833" />
-    <state x="690" y="315" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1605623753544">
+    <state x="690" y="315" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1606197804938">
       <screen x="0" y="40" width="1920" height="1040" />
     </state>
-    <state x="690" y="315" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.40.1920.1040@0.40.1920.1040" timestamp="1605623753544" />
-    <state x="740" y="315" key="FileChooserDialogImpl" timestamp="1605197384366">
+    <state x="690" y="315" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.40.1920.1040@0.40.1920.1040" timestamp="1606197804938" />
+    <state x="740" y="315" key="FileChooserDialogImpl" timestamp="1605666440240">
       <screen x="0" y="40" width="1920" height="1040" />
     </state>
-    <state x="740" y="315" key="FileChooserDialogImpl/0.40.1920.1040@0.40.1920.1040" timestamp="1605197384366" />
+    <state x="740" y="315" key="FileChooserDialogImpl/0.40.1920.1040@0.40.1920.1040" timestamp="1605666440240" />
     <state x="835" y="460" key="Github.ShareDialog" timestamp="1605202850207">
       <screen x="0" y="40" width="1920" height="1040" />
     </state>
     <state x="835" y="460" key="Github.ShareDialog/0.40.1920.1040@0.40.1920.1040" timestamp="1605202850207" />
-    <state x="793" y="479" key="NewPhpFileDialog" timestamp="1605610726185">
+    <state x="706" y="264" key="NewPhpClassDialog" timestamp="1606197764027">
       <screen x="0" y="40" width="1920" height="1040" />
     </state>
-    <state x="793" y="479" key="NewPhpFileDialog/0.40.1920.1040@0.40.1920.1040" timestamp="1605610726185" />
-    <state x="616" y="260" key="run.anything.popup" timestamp="1605618650386">
+    <state x="706" y="264" key="NewPhpClassDialog/0.40.1920.1040@0.40.1920.1040" timestamp="1606197764027" />
+    <state x="793" y="479" key="NewPhpFileDialog" timestamp="1606197757139">
       <screen x="0" y="40" width="1920" height="1040" />
     </state>
-    <state x="616" y="260" key="run.anything.popup/0.40.1920.1040@0.40.1920.1040" timestamp="1605618650386" />
+    <state x="793" y="479" key="NewPhpFileDialog/0.40.1920.1040@0.40.1920.1040" timestamp="1606197757139" />
+    <state x="616" y="260" key="run.anything.popup" timestamp="1606222812669">
+      <screen x="0" y="40" width="1920" height="1040" />
+    </state>
+    <state x="616" y="260" key="run.anything.popup/0.40.1920.1040@0.40.1920.1040" timestamp="1606222812669" />
     <state x="623" y="265" width="672" height="678" key="search.everywhere.popup" timestamp="1605612312503">
       <screen x="0" y="40" width="1920" height="1040" />
     </state>
     <state x="623" y="265" width="672" height="678" key="search.everywhere.popup/0.40.1920.1040@0.40.1920.1040" timestamp="1605612312503" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/app/Http/Controllers/AuthController.php</url>
+          <line>31</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
