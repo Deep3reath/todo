@@ -8,6 +8,7 @@ use Illuminate\Database\Eloquent\Model;
 /**
  * @property mixed title
  * @method static where(array $array)
+ * @method select(string $string)
  */
 class Tasks extends Model
 {

@@ -179,6 +179,17 @@
       <workItem from="1606281819496" duration="1214000" />
       <workItem from="1606307046431" duration="5248000" />
       <workItem from="1606317976062" duration="3499000" />
+      <workItem from="1606386563087" duration="643000" />
+      <workItem from="1606394668716" duration="410000" />
+      <workItem from="1606399775880" duration="690000" />
+      <workItem from="1606401154096" duration="185000" />
+      <workItem from="1606859007173" duration="1850000" />
+      <workItem from="1607000431619" duration="1629000" />
+      <workItem from="1607151209758" duration="433000" />
+      <workItem from="1607182158699" duration="2994000" />
+      <workItem from="1607265310681" duration="2565000" />
+      <workItem from="1607321951198" duration="1259000" />
+      <workItem from="1607329728499" duration="14117000" />
     </task>
     <servers />
   </component>
@@ -194,14 +205,18 @@
       <screen x="0" y="40" width="1920" height="1040" />
     </state>
     <state x="662" y="380" key="#Notifications/0.40.1920.1040@0.40.1920.1040" timestamp="1605202931833" />
-    <state x="690" y="315" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1606197804938">
+    <state x="763" y="228" key="#com.intellij.ide.util.MemberChooser" timestamp="1606859912858">
       <screen x="0" y="40" width="1920" height="1040" />
     </state>
-    <state x="690" y="315" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.40.1920.1040@0.40.1920.1040" timestamp="1606197804938" />
-    <state x="740" y="315" key="FileChooserDialogImpl" timestamp="1605666440240">
+    <state x="763" y="228" key="#com.intellij.ide.util.MemberChooser/0.40.1920.1040@0.40.1920.1040" timestamp="1606859912858" />
+    <state x="690" y="315" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1607344550770">
       <screen x="0" y="40" width="1920" height="1040" />
     </state>
-    <state x="740" y="315" key="FileChooserDialogImpl/0.40.1920.1040@0.40.1920.1040" timestamp="1605666440240" />
+    <state x="690" y="315" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.40.1920.1040@0.40.1920.1040" timestamp="1607344550770" />
+    <state x="740" y="315" key="FileChooserDialogImpl" timestamp="1607188601637">
+      <screen x="0" y="40" width="1920" height="1040" />
+    </state>
+    <state x="740" y="315" key="FileChooserDialogImpl/0.40.1920.1040@0.40.1920.1040" timestamp="1607188601637" />
     <state x="835" y="460" key="Github.ShareDialog" timestamp="1605202850207">
       <screen x="0" y="40" width="1920" height="1040" />
     </state>
@@ -214,24 +229,17 @@
       <screen x="0" y="40" width="1920" height="1040" />
     </state>
     <state x="793" y="479" key="NewPhpFileDialog/0.40.1920.1040@0.40.1920.1040" timestamp="1606197757139" />
-    <state x="616" y="260" key="run.anything.popup" timestamp="1606222812669">
+    <state x="608" y="174" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1607334958968">
       <screen x="0" y="40" width="1920" height="1040" />
     </state>
-    <state x="616" y="260" key="run.anything.popup/0.40.1920.1040@0.40.1920.1040" timestamp="1606222812669" />
-    <state x="623" y="265" width="672" height="678" key="search.everywhere.popup" timestamp="1605612312503">
+    <state x="608" y="174" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.40.1920.1040@0.40.1920.1040" timestamp="1607334958968" />
+    <state x="616" y="260" key="run.anything.popup" timestamp="1607342254992">
       <screen x="0" y="40" width="1920" height="1040" />
     </state>
-    <state x="623" y="265" width="672" height="678" key="search.everywhere.popup/0.40.1920.1040@0.40.1920.1040" timestamp="1605612312503" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/app/Http/Controllers/AuthController.php</url>
-          <line>31</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <state x="616" y="260" key="run.anything.popup/0.40.1920.1040@0.40.1920.1040" timestamp="1607342254992" />
+    <state x="623" y="265" width="672" height="678" key="search.everywhere.popup" timestamp="1606860132135">
+      <screen x="0" y="40" width="1920" height="1040" />
+    </state>
+    <state x="623" y="265" width="672" height="678" key="search.everywhere.popup/0.40.1920.1040@0.40.1920.1040" timestamp="1606860132135" />
   </component>
 </project>

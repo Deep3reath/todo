@@ -25,6 +25,7 @@ class TasksController extends Controller
     }
 
 
+
     public function renderTasks(Tasks $obTasks)
     {
         $obTasks = $obTasks::where(['user_id' => Auth::user()->id])->get();

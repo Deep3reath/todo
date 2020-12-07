@@ -16,7 +16,6 @@ class AuthController extends Controller
     public function authenticate(Request $obRequest)
     {
         $arCredentials = $obRequest->only('email', 'password');
-
         if ($obRequest->method() === 'POST') {
             if (Auth::attempt($arCredentials, $obRequest->remember))
                 return response()->json(['redirect' => route('home')]);
