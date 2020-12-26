@@ -1,14 +1,86 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;800&display=swap');
-
-header {
-    line-height: 130px;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 800;
-    background-color: #fff;
-    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.05);
+* {
+    margin: 0 auto;
+    padding: 0;
 }
-
+h1 {
+    font-family: Montserrat, sans-serif;
+    font-weight: 800;
+}
+h1 > a, h1 > a:hover, h1 > a:active {
+    text-decoration: none;
+    color: black;
+}
+header {
+    width: 100%;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.05);
+    height: 90px;
+}
+header > div {
+    height: inherit;
+}
+header > h1 {
+    margin-left: 0;
+}
+section {
+    min-height: 600px;
+}
+.todo-container {
+    width: 940px;
+}
+.todo-item {
+    width: inherit;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.05);
+    height: 90px;
+    border-radius: 5px;
+}
+.todo-item p {
+    min-font-size: 16px;
+    font-size: 32px;
+}
+.todo-item:first-child {
+    margin-top: 35px;
+}
+.todo-item:not(:first-child) {
+    margin-top: 35px;
+}
+.register-form > input[type="button"] {
+    border: none;
+    border-radius: 5px;
+    min-height: 50px;
+    background-color: white;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.10);
+    cursor: pointer;
+}
+.register-form > input[type="email"], .register-form > input[type="text"], .register-form > input[type="password"] {
+    width: 235px;
+    height: 45px;
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+    background-color: inherit;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
+}
+.form-add input[type="text"] {
+    width: 425px;
+    height: 65px;
+    padding: 5px;
+    border: none;
+    font-size: 18px;
+}
+.form-add {
+    border-radius: 5px;
+    padding: 5px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.25);
+}
+.form-add input[type="text"]:focus {
+    outline: none;
+}
+.form-add input[type="button"] {
+    border: none;
+    background-color: inherit;
+}
+.update, .delete {
+    background-color: inherit;
+    border: none;
+    color: dodgerblue;
+}

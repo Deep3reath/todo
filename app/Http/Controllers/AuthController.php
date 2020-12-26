@@ -1,60 +1,51 @@
 <?php
 
-
 namespace App\Http\Controllers;
-
 
 use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
-use Illuminate\Support\Str;
+use Illuminate\View\View;
 
 class AuthController extends Controller
 {
-    public function authenticate(Request $obRequest)
+    public function login(Request $obReq)
     {
-        $arCredentials = $obRequest->only('email', 'password');
-        if ($obRequest->method() === 'POST') {
-            if (Auth::attempt($arCredentials, $obRequest->remember))
-                return response()->json(['redirect' => route('home')]);
-            return response()->json(['validationMessage' => 'Неправильный логин или пароль']);
-        } else {
-            return view('auth.login');
+        if ($obReq->method() === 'POST') {
+            $arCreds = $obReq->only(['email', 'password']);
+            if (Auth::attempt($arCreds)) {
+              return response()->json(['message' => 'success', 'redirect' => '/']);
+            }
+            return response()->json(
+                ['validationMessage' => 'Неправильный логин или пароль'], 200,
+                ['Content-Type' => 'application/json;charset=UTF-8', 'Charset' => 'utf-8'],
+                JSON_UNESCAPED_UNICODE
+            );
         }
+        return view('login');
     }
 
-    public function register(User $obUser, Request $obRequest)
+    public function register(Request $obReq, User $obUser)
     {
-        $arCredentials = $obRequest->only('email', 'password', 'remember');
-
-        if ($obRequest->method() === 'POST') {
-            $obValidator = Validator::make($obRequest->all(), [
-                'email' => 'required|unique:user|max:255',
-                'name' => 'required|max:255',
-                'password' => 'required|max:255',
-            ], [
-                'required' => 'Поле `:attribute` должно быть заполнено.',
-                'max' => 'Максимальная длина поля `:attribute`, :max символа',
-                'unique' => 'Пользователь с таким e-mail уже существует.',
-            ], [
-                'email' => 'Почта',
-                'name' => 'Имя',
-                'password' => 'Пароль',
-            ]);
-            if ($obValidator->fails()) {
-                return response()->json(['validationMessage' => $obValidator->errors()->first()]);
+        if ($obReq->method() === 'POST') {
+            $obValidated = Validator::make($obReq->only(['email', 'username', 'password']),
+                [
+                    'email' => 'email:rfc,dns|min:2|max:63|required|unique:user',
+                    'username' => 'min:2|max:63|required',
+                    'password' => 'min:2|max:31|required',
+                ]);
+            if ($obValidated->fails()) {
+                return response()->json(['validationMessage' => $obValidated->errors()->first()]);
             }
             $obUser->fill([
-                'name' => $obRequest->name,
-                'password' => Hash::make($obRequest->password),
-                'email' => $obRequest->email,
-                'api_token' => Str::random(60),
+                'email' => $obReq->email,
+                'username' => $obReq->username,
+                'password' => Hash::make($obReq->password)
             ])->save();
-            return response()->json(['redirect' => route('login')]);
-        } else {
-            return view('auth.register');
+            return response()->json(['message' => 'success', 'redirect' => 'login']);
         }
+        return view('register');
     }
 }

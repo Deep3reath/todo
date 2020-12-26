@@ -1,29 +1,38 @@
 <?php
 
+use App\Http\Controllers\AuthController;
+use App\Http\Controllers\TaskController;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
-
-// Работа с задачами
-
-Route::middleware('auth')->group(function () {
-    Route::get('/', [App\Http\Controllers\TasksController::class, 'index'])->name('home');
-    Route::get('/render', [App\Http\Controllers\TasksController::class, 'renderTasks'])->name('renderTasks');
-    Route::prefix('tasks')->middleware('auth')->group(function () {
-        Route::post('create', [App\Http\Controllers\TasksController::class, 'create'])->name('create');
-        Route::any('update', [App\Http\Controllers\TasksController::class, 'update'])->name('update');
-        Route::get('delete', [App\Http\Controllers\TasksController::class, 'delete'])->name('delete');
-    });
-    Route::any('/logout',
-        function () {
-            Auth::logout();
-            return redirect(\route('home'));
-        })->name('logout');
+/*
+|--------------------------------------------------------------------------
+| Web Routes
+|--------------------------------------------------------------------------
+|
+| Here is where you can register web routes for your application. These
+| routes are loaded by the RouteServiceProvider within a group which
+| contains the "web" middleware group. Now create something great!
+|
+*/
+Route::get('/home', function () {
+    return view('home');
 });
-// Авторизация и Регистрация
-#Route::any();
-Route::middleware('guest')->group(function () {
-    Route::any('/login', [\App\Http\Controllers\AuthController::class, 'authenticate'])->name('login');
-    Route::any('/register', [\App\Http\Controllers\AuthController::class, 'register'])->name('register');
+Route::get('/', function () {
+    return view('home');
+})->name('home');
+Route::group(['middleware' => 'guest'], function () {
+    Route::any('register', [AuthController::class, 'register'])->name('register');
+    Route::any('login', [AuthController::class, 'login'])->name('login');
+});
+Route::group(['middleware' => 'auth'], function () {
+    Route::any('logout', function () {
+        Auth::logout();
+        return redirect(route('home'));
+    })->name('logout');
+    Route::post('create', [TaskController::class, 'create'])->name('create');
+    Route::post('update', [TaskController::class, 'update'])->name('update');
+    Route::post('delete', [TaskController::class, 'delete'])->name('delete');
+    Route::post('renderTasks', [TaskController::class, 'renderTasks'])->name('renderTasks');
 });
 
