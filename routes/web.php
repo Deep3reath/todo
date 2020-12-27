@@ -34,5 +34,6 @@ Route::group(['middleware' => 'auth'], function () {
     Route::post('update', [TaskController::class, 'update'])->name('update');
     Route::post('delete', [TaskController::class, 'delete'])->name('delete');
     Route::post('renderTasks', [TaskController::class, 'renderTasks'])->name('renderTasks');
+    Route::post('renderModal', [TaskController::class, 'renderModal'])->name('renderModal');
 });
 

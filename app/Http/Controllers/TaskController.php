@@ -16,6 +16,13 @@ class TaskController extends Controller
             ['obTasks' => $obTask::where(['user_id' => Auth::user()->id]
             )->get()])->render());
     }
+    public function renderModal(Task $obTask, Request $obReq)
+    {
+        return response()->json(
+            ['template' => view('modal')->with(
+            ['obTask' => $obTask::where(['user_id' => Auth::user()->id, 'title' => $obReq->title]
+            )->get()->first()])->render()]);
+    }
 
     public function get(Task $obTask)
     {
