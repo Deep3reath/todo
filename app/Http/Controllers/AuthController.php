@@ -30,10 +30,10 @@ class AuthController extends Controller
     public function register(Request $obReq, User $obUser)
     {
         if ($obReq->method() === 'POST') {
-            $obValidated = Validator::make($obReq->only(['email', 'username', 'password']),
+            $obValidated = Validator::make($obReq->only(['email', 'firstname', 'password']),
                 [
                     'email' => 'email:rfc,dns|min:2|max:63|required|unique:user',
-                    'username' => 'min:2|max:63|required',
+                    'firstname' => 'min:2|max:63|required',
                     'password' => 'min:2|max:31|required',
                 ]);
             if ($obValidated->fails()) {
@@ -41,7 +41,7 @@ class AuthController extends Controller
             }
             $obUser->fill([
                 'email' => $obReq->email,
-                'username' => $obReq->username,
+                'firstname' => $obReq->firstname,
                 'password' => Hash::make($obReq->password)
             ])->save();
             return response()->json(['message' => 'success', 'redirect' => 'login']);

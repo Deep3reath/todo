@@ -7,9 +7,7 @@
         <input type="text" name="title" placeholder="Введите Задачу">
         <input class="form-add-button" type="button" value="Добавить">
     </form>
-    <div class="todo-container d-flex flex-column">
-
-    </div>
+    <div class="todo-container d-flex flex-column"></div>
 
     <script defer type="text/javascript">
         function requestRenderTasks() {
@@ -19,7 +17,7 @@
                     $(".todo-container").html(data);
                 }
             );
-        };
+        }
         $.ajaxSetup({
             headers: {
                 'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')

@@ -7,7 +7,7 @@
     <form class="register-form d-flex flex-column mt-5" method="post">
         @csrf
         <input type="email" placeholder="Введите свою почту" name="email">
-        <input type="text" placeholder="Введите свое имя" name="username" class="mt-4">
+        <input type="text" placeholder="Введите свое имя" name="firstname" class="mt-4">
         <input type="password" placeholder="Введите пароль" name="password" class="mt-4">
         <input class="submit-button-form mt-5" id="submit" type="button" value="Отправить">
     </form>
@@ -20,12 +20,12 @@
         $(".submit-button-form").click(function(e){
             e.preventDefault();
             let password = $("input[name=password]").val();
-            let username = $("input[name=username]").val();
+            let firstname = $("input[name=firstname]").val();
             let email = $("input[name=email]").val();
             $.ajax({
                 type:'POST',
                 url:"{{ route('register') }}",
-                data:{"_token": $('meta[name="csrf-token"]').attr('content'), password:password, username:username, email:email},
+                data:{"_token": $('meta[name="csrf-token"]').attr('content'), password:password, firstname:firstname, email:email},
                 success: function (response) {
                     if (response.redirect) {
                         window.location.href = response.redirect;

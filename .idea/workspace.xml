@@ -137,18 +137,23 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/public/images" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="web-ide.project.structure" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="G:\OSPanel\OpenServer\domains\todo-lehapro\resources\views" />
-      <recent name="G:\OSPanel\OpenServer\domains\todo-lehapro\resources\css" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="G:\OSPanel\OpenServer\domains\todo-lehapro\public\images" />
+      <recent name="G:\OSPanel\OpenServer\domains\todo-lehapro\resources\images" />
+      <recent name="G:\OSPanel\OpenServer\domains\todo-lehapro\public" />
       <recent name="G:\OSPanel\OpenServer\domains\todo-lehapro\app\Http\Controllers\Api" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="G:\OSPanel\OpenServer\domains\todo-lehapro\resources" />
+      <recent name="G:\OSPanel\OpenServer\domains\todo-lehapro\resources\css" />
+      <recent name="G:\OSPanel\OpenServer\domains\todo-lehapro\resources\views" />
     </key>
   </component>
   <component name="RunManager">
@@ -189,7 +194,37 @@
       <workItem from="1608952399620" duration="6526000" />
       <workItem from="1608964847672" duration="2998000" />
       <workItem from="1608967884026" duration="2000" />
-      <workItem from="1609050115875" duration="3269000" />
+      <workItem from="1609050115875" duration="3865000" />
+      <workItem from="1609149692148" duration="1831000" />
+      <workItem from="1609675816298" duration="706000" />
+      <workItem from="1610522643460" duration="2031000" />
+      <workItem from="1610740234299" duration="6121000" />
+      <workItem from="1610805457196" duration="3428000" />
+      <workItem from="1610819705109" duration="8179000" />
+      <workItem from="1610891833710" duration="52000" />
+      <workItem from="1610895686040" duration="78000" />
+      <workItem from="1610896389983" duration="1250000" />
+      <workItem from="1610918388921" duration="799000" />
+      <workItem from="1610969358604" duration="266000" />
+      <workItem from="1610992577395" duration="1417000" />
+      <workItem from="1611014003150" duration="633000" />
+      <workItem from="1611017393100" duration="3096000" />
+      <workItem from="1611061986915" duration="2490000" />
+      <workItem from="1611065045167" duration="1838000" />
+      <workItem from="1611082846346" duration="594000" />
+      <workItem from="1611142202496" duration="2199000" />
+      <workItem from="1611162659136" duration="4179000" />
+      <workItem from="1611190526814" duration="14976000" />
+      <workItem from="1611215424922" duration="683000" />
+      <workItem from="1611261095366" duration="5803000" />
+      <workItem from="1611281048319" duration="7431000" />
+      <workItem from="1611295711335" duration="2193000" />
+      <workItem from="1611304360164" duration="2270000" />
+      <workItem from="1611318212051" duration="592000" />
+      <workItem from="1611352293311" duration="16252000" />
+      <workItem from="1611378669517" duration="5808000" />
+      <workItem from="1611437604028" duration="21613000" />
+      <workItem from="1611473989492" duration="10125000" />
     </task>
     <servers />
   </component>
@@ -205,29 +240,41 @@
       <screen x="0" y="40" width="1920" height="1040" />
     </state>
     <state x="759" y="228" key="#com.intellij.ide.util.MemberChooser/0.40.1920.1040@0.40.1920.1040" timestamp="1608119176330" />
-    <state x="690" y="315" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1608749811410">
+    <state x="690" y="315" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1611482343284">
       <screen x="0" y="40" width="1920" height="1040" />
     </state>
-    <state x="690" y="315" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.40.1920.1040@0.40.1920.1040" timestamp="1608749811410" />
+    <state x="690" y="315" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.40.1920.1040@0.40.1920.1040" timestamp="1611482343284" />
     <state x="711" y="469" key="ComposerInitDialogKey" timestamp="1608394798106">
       <screen x="0" y="40" width="1920" height="1040" />
     </state>
     <state x="711" y="469" key="ComposerInitDialogKey/0.40.1920.1040@0.40.1920.1040" timestamp="1608394798106" />
-    <state x="740" y="315" key="FileChooserDialogImpl" timestamp="1608640807862">
+    <state x="740" y="315" key="FileChooserDialogImpl" timestamp="1609676770584">
       <screen x="0" y="40" width="1920" height="1040" />
     </state>
-    <state x="740" y="315" key="FileChooserDialogImpl/0.40.1920.1040@0.40.1920.1040" timestamp="1608640807862" />
-    <state x="634" y="262" key="NewPhpClassDialog" timestamp="1608542603786">
+    <state x="740" y="315" key="FileChooserDialogImpl/0.40.1920.1040@0.40.1920.1040" timestamp="1609676770584" />
+    <state x="634" y="262" key="NewPhpClassDialog" timestamp="1611445874750">
       <screen x="0" y="40" width="1920" height="1040" />
     </state>
-    <state x="634" y="262" key="NewPhpClassDialog/0.40.1920.1040@0.40.1920.1040" timestamp="1608542603786" />
-    <state x="776" y="478" key="NewPhpFileDialog" timestamp="1609051502820">
+    <state x="634" y="262" key="NewPhpClassDialog/0.40.1920.1040@0.40.1920.1040" timestamp="1611445874750" />
+    <state x="776" y="478" key="NewPhpFileDialog" timestamp="1611462295212">
       <screen x="0" y="40" width="1920" height="1040" />
     </state>
-    <state x="776" y="478" key="NewPhpFileDialog/0.40.1920.1040@0.40.1920.1040" timestamp="1609051502820" />
-    <state x="616" y="260" key="run.anything.popup" timestamp="1608958486786">
+    <state x="776" y="478" key="NewPhpFileDialog/0.40.1920.1040@0.40.1920.1040" timestamp="1611462295212" />
+    <state x="453" y="204" key="SettingsEditor" timestamp="1611284251880">
       <screen x="0" y="40" width="1920" height="1040" />
     </state>
-    <state x="616" y="260" key="run.anything.popup/0.40.1920.1040@0.40.1920.1040" timestamp="1608958486786" />
+    <state x="453" y="204" key="SettingsEditor/0.40.1920.1040@0.40.1920.1040" timestamp="1611284251880" />
+    <state x="610" y="174" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1611066167417">
+      <screen x="0" y="40" width="1920" height="1040" />
+    </state>
+    <state x="610" y="174" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.40.1920.1040@0.40.1920.1040" timestamp="1611066167417" />
+    <state x="616" y="260" width="672" height="677" key="run.anything.popup" timestamp="1611442638480">
+      <screen x="0" y="40" width="1920" height="1040" />
+    </state>
+    <state x="616" y="260" width="672" height="677" key="run.anything.popup/0.40.1920.1040@0.40.1920.1040" timestamp="1611442638480" />
+    <state x="623" y="265" width="672" height="678" key="search.everywhere.popup" timestamp="1611474717283">
+      <screen x="0" y="40" width="1920" height="1040" />
+    </state>
+    <state x="623" y="265" width="672" height="678" key="search.everywhere.popup/0.40.1920.1040@0.40.1920.1040" timestamp="1611474717283" />
   </component>
 </project>

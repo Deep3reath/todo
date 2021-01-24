@@ -27,7 +27,7 @@ class TaskRequest extends FormRequest
     public function rules()
     {
         return [
-            'title' => 'required|min:2|max:31|unique:tasks,title,NULL,id,user_id,'.Auth::user()->id
+            'title' => 'required|min:2|max:31|unique:tasks,title,NULL,id,user_id,'.Auth::user()->id,
         ];
     }
 

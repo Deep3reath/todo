@@ -1,0 +1,60 @@
+@media (max-width: 1920px) {
+    section.sidebar {
+        width: 600px;
+        min-height: 777px;
+    }
+
+    section.overview-container, section.overview-comments {
+        width: 1110px;
+    }
+    section.overview-container.flex-row {
+        max-height: 400px;
+        min-height: 400px;
+    }
+    .overview-subtasks-container {
+        max-height: 300px;
+    }
+    .overview-comments-list-container {
+        max-height: 400px;
+    }
+    .todo-container {
+        width: 940px;
+    }
+    .sidebar-header, .sidebar-comments-wrapper, .sidebar, .sidebar-list-tasks {
+        overflow-y: hidden;
+    }
+    .sidebar-header-likes {
+        margin-top: -28px;
+        margin-left: 400px;
+    }
+    .sidebar-list-tasks {
+        padding: 25px 0;
+        margin-left: 97px;
+    }
+    .sidebar-comments-wrapper {
+        width: 404px;
+        height: 252px;
+    }
+    .sidebar-comments-container {
+        width: 304px;
+        height: 200px;
+    }
+    .sidebar-task-wrapper > div > p {
+        width: 300px;
+    }
+    .form-edit-subtask > button, .form-add-subtask > button, .form-edit-header > button {
+        margin-left: -40px;
+    }
+    .form-add-subtask > input {
+        margin-left: 50px;
+    }
+    .form-edit-header > input {
+        margin-left: 150px;
+    }
+    .alert-modal {
+        width: 400px !important;
+    }
+    .overview-comments-list-container {
+        width: inherit !important;
+    }
+}

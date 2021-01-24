@@ -1,6 +1,9 @@
 * {
+    font-family: Montserrat, sans-serif;
+    color: #181818;
     margin: 0 auto;
     padding: 0;
+    overflow-x: hidden;
 }
 h1 {
     font-family: Montserrat, sans-serif;
@@ -23,9 +26,6 @@ header > h1 {
 }
 section {
     min-height: 600px;
-}
-.todo-container {
-    width: 940px;
 }
 .todo-item {
     width: inherit;
@@ -50,6 +50,9 @@ section {
     background-color: white;
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.10);
     cursor: pointer;
+}
+.overview-pagination > nav > ul > li {
+    margin: 0;
 }
 .register-form > input[type="email"], .register-form > input[type="text"], .register-form > input[type="password"] {
     width: 235px;
@@ -83,4 +86,144 @@ section {
     background-color: inherit;
     border: none;
     color: dodgerblue;
+}
+section.sidebar {
+    box-shadow: -5px 4px 4px rgba(0, 0, 0, 0.05);
+    border-radius: 30px;
+    background-color: white;
+    border: none;
+    /*border: 1px solid indianred;*/
+}
+.sidebar-list-num {
+    width: 26px;
+    height: 26px;
+    border: 1px solid #181818;
+    border-radius: 50px;
+}
+.sidebar-comments > p {
+    color: #7B7B7B;
+}
+.sidebar-comments-wrapper {
+    background-color: #F7F7F7;
+    border-radius: 30px 30px 0 60px;
+    padding: 30px 0 30px 30px;
+}
+.sidebar-comments-container {
+    background-color: inherit;
+    overflow-y: scroll;
+}
+
+.overview-subtasks-container::-webkit-scrollbar,
+.overview-comments-list-container::-webkit-scrollbar,
+.sidebar-comments-container::-webkit-scrollbar,
+#form-add-comment-input::-webkit-scrollbar {
+    width: 3px;
+    margin: 0 30px;
+}
+.sidebar-comments-container::-webkit-scrollbar-track,
+.overview-comments-list-container::-webkit-scrollbar-track,
+.overview-subtasks-container::-webkit-scrollbar-track,
+#form-add-comment-input::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+.sidebar-comments-container::-webkit-scrollbar-thumb,
+.overview-comments-list-container::-webkit-scrollbar-thumb,
+.overview-subtasks-container::-webkit-scrollbar-thumb,
+#form-add-comment-input::-webkit-scrollbar-thumb {
+    background: #888;
+    background-clip: padding-box;
+    border-radius: 50px;
+}
+
+.sidebar-header > h5 > button {
+    background-color: inherit;
+    border: none;
+}
+
+.sidebar-comments-item > p:first-child {
+    color: #7A7A7A;
+}
+.sidebar-comments-actions > button, .sidebar-comments-actions > button:focus {
+    background-color: inherit;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+.sidebar-list-actions > div > button {
+    border: none;
+    background-color: inherit;
+}
+.montserrat-text {
+    font-family: Montserrat, sans-serif;
+}
+.fz-18 {
+    font-size: 18px;
+}
+.fz-16 {
+    font-size: 16px;
+}
+.fz-14 {
+    font-size: 14px;
+}
+.fz-12 {
+    font-size: 12px;
+}
+.fz-11 {
+    font-size: 11px;
+}
+.sidebar-list-subtask {
+    max-width: 300px;
+    width: 300px;
+}
+.alert-modal:hover {
+    cursor: pointer;
+}
+.form-edit-subtask > input[type="text"], .form-add-subtask > input[type="text"], .form-edit-header > input[type="text"] {
+    border:none;
+    padding: 0 50px 0 10px;
+    background: #F6F6F6;
+    border-radius: 20px 20px 0 25px;
+    width: 315px;
+    height: 43px;
+}
+.form-edit-subtask > input[type="text"]:focus, .form-add-subtask > input[type="text"]:focus, .form-edit-header > input[type="text"]:focus {
+    outline: none;
+}
+.form-edit-subtask > button, .form-add-subtask > button, .form-edit-header > button {
+    border: none;
+    background-color: inherit;
+}
+.sidebar-list-tasks {
+    counter-reset: subtasks;
+}
+.sidebar-task-item:before {
+    counter-increment: subtasks;
+    content:counter(subtasks);
+    max-height: 30px;
+    padding: 3px 10px;
+    border: 1px solid #181818;
+    border-radius: 50px;
+    text-align: center;
+}
+.sidebar-task-item:first-child:before {
+    width: 30px;
+}
+#form-add-comment-input {
+    border:none;
+    padding: 20px;
+    width: 525px;
+    background: #F6F6F6;
+    height: 80px;
+    resize: none;
+}
+.form-add-comment-input-wrapper {
+    background: #F6F6F6;
+    border-radius: 20px 20px 0 25px;
+    padding: 10px;
+}
+input:focus, textarea:focus {
+    outline: none !important;
+}
+input[type="button"]:hover, button:hover {
+    cursor: pointer;
 }
