@@ -12,7 +12,6 @@
     >
     <link href="{{ asset('css/style.css')}}" rel="stylesheet" type="text/css" />
     <link href="{{ asset('css/media.css')}}" rel="stylesheet" type="text/css" />
-
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
             integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"
@@ -29,9 +28,26 @@
           integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
           crossorigin="anonymous"
     >
-
+    <script defer src="{{asset('js/todo-app.js')}}"></script>
 </head>
 <body>
+<script type="text/javascript">
+    const config = {
+        csrf: $('meta[name="csrf-token"]').attr('content'),
+        routes: {
+            renderTasks: '{{route("renderTasks")}}',
+            renderModal: '{{ route('renderModal') }}',
+            login: '{{ route('login') }}',
+            register: '{{ route('register') }}',
+            create: '{{ route('create') }}',
+            delete: '{{ route('delete') }}',
+            sortSubtasks: '{{ route('sort-subtasks') }}',
+            deleteSubtask: '{{ route('delete-subtask') }}',
+            updateSubtask: '{{ route('update-subtask') }}',
+            updateTitle: '{{ route('update-title') }}',
+        }
+    };
+</script>
 <header>
     <div class="container d-flex align-items-center">
         <h1 class="ml-1 align-self-center"><a href="{{route('home')}}">Todo</a></h1>

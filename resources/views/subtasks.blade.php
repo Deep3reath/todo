@@ -12,7 +12,7 @@
                     <button class="ml-3 mr-2 edit-subtask-btn">
                         <img src="images/edit.svg" alt="edit">
                     </button>
-                    <button onclick="deleteSubtask($(this), '{{$title}}')">
+                    <button class="delete-subtask-btn">
                         <img src="images/delete.svg" alt="delete-subtask">
                     </button>
                 </div>

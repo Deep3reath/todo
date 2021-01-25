@@ -15,3 +15,4 @@ mix.js('resources/js/app.js', 'public/js')
     .postCss('resources/css/app.css', 'public/css', [
         //
     ]).postCss('resources/css/style.css', 'public/css').postCss('resources/css/media.css', 'public/css');
+mix.js('resources/js/todo-app.js', 'public/js');

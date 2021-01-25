@@ -15,6 +15,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="CSS File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -224,7 +225,9 @@
       <workItem from="1611352293311" duration="16252000" />
       <workItem from="1611378669517" duration="5808000" />
       <workItem from="1611437604028" duration="21613000" />
-      <workItem from="1611473989492" duration="10125000" />
+      <workItem from="1611473989492" duration="10774000" />
+      <workItem from="1611546407741" duration="1270000" />
+      <workItem from="1611556101172" duration="20201000" />
     </task>
     <servers />
   </component>
@@ -264,17 +267,17 @@
       <screen x="0" y="40" width="1920" height="1040" />
     </state>
     <state x="453" y="204" key="SettingsEditor/0.40.1920.1040@0.40.1920.1040" timestamp="1611284251880" />
-    <state x="610" y="174" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1611066167417">
+    <state x="610" y="174" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1611559399279">
       <screen x="0" y="40" width="1920" height="1040" />
     </state>
-    <state x="610" y="174" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.40.1920.1040@0.40.1920.1040" timestamp="1611066167417" />
-    <state x="616" y="260" width="672" height="677" key="run.anything.popup" timestamp="1611442638480">
+    <state x="610" y="174" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.40.1920.1040@0.40.1920.1040" timestamp="1611559399279" />
+    <state x="616" y="260" width="672" height="677" key="run.anything.popup" timestamp="1611559391016">
       <screen x="0" y="40" width="1920" height="1040" />
     </state>
-    <state x="616" y="260" width="672" height="677" key="run.anything.popup/0.40.1920.1040@0.40.1920.1040" timestamp="1611442638480" />
-    <state x="623" y="265" width="672" height="678" key="search.everywhere.popup" timestamp="1611474717283">
+    <state x="616" y="260" width="672" height="677" key="run.anything.popup/0.40.1920.1040@0.40.1920.1040" timestamp="1611559391016" />
+    <state x="623" y="265" width="672" height="678" key="search.everywhere.popup" timestamp="1611572460505">
       <screen x="0" y="40" width="1920" height="1040" />
     </state>
-    <state x="623" y="265" width="672" height="678" key="search.everywhere.popup/0.40.1920.1040@0.40.1920.1040" timestamp="1611474717283" />
+    <state x="623" y="265" width="672" height="678" key="search.everywhere.popup/0.40.1920.1040@0.40.1920.1040" timestamp="1611572460505" />
   </component>
 </project>
